@@ -1,0 +1,108 @@
+/* style.css */
+
+/* General reset and font */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Title */
+#title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff2e2e;
+  border-bottom: 2px solid #ff2e2e;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
+/* Section headers */
+h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  border-left: 5px solid #ff2e2e;
+  padding-left: 10px;
+  margin-top: 40px;
+}
+
+/* Labels and inputs */
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* Buttons */
+button {
+  background-color: #ff2e2e;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+/* Budget summary */
+#remaining-budget, #converted-budget {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #00ff99;
+  margin: 10px 0;
+}
+
+/* Expense list */
+#expenses-list {
+  background-color: #1a1a1a;
+  border-left: 4px solid #ff2e2e;
+  padding: 15px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+#expenses-list h3 {
+  margin-top: 0;
+  color: #ffffff;
+}
+
+#expense-entries {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Currency result */
+#conversion-result {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #00d4ff;
+}
+
+/* Section container spacing */
+section, .section {
+  margin-bottom: 40px;
+}
