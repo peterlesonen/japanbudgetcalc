@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Japan Trip Budget Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1 id="title">Japan Trip Budget Tracker</h1>
+
+  <!-- Set total trip budget -->
+  <section>
+    <h2> Set Your Total Budget</h2>
+    <label for="total-budget">Total Budget (¥):</label>
+    <input type="number" id="total-budget" placeholder="Total Budget (in JPY)"/>
+    <button id="set-budget-btn">Set Budget</button>
+  </section>
+
+  <!-- Fixed costs (flight and accommodation) -->
+  <section>
+    <h2> Add Fixed Costs</h2>
+    <label for="flight-cost">Flight Cost (¥):</label>
+    <input type="number" id="flight-cost" />
+
+    <label for="accommodation-cost">Accommodation Cost (¥):</label>
+    <input type="number" id="accommodation-cost" />
+
+    <button id="add-fixed-btn">Add Fixed Costs</button>
+  </section>
+
+    <!-- Add daily expenses -->
+     <section>
+      <h2> Set Daily Expanses</h2>
+      <label for="expanse-date">Date:</label>
+      <input type="date" id="expanse-date" />
+
+      <label for="expanse-category">Category:</label>
+      <select id="expanse-category">
+        <option value="food">Food & Drinks</option>
+        <option value="transport">Transport</option>
+        <option value="activities">Activities</option>
+        <option value="shopping">Shopping</option>
+        <option value="misc">Miscellaneous</option>
+     </select>
+
+     <label for="notes-expanse">Notes:</label>
+     <input type="text" id="notes-expanse" />
+     
+     <label for="expanse-amount">Amount (¥):</label>
+     <input type="number" id="expanse-amount" />
+     
+     <button id="add-expanse-btn">Add Expanse</button>
+
+       <!-- Budget Summary -->
+        <section>
+          <h2>Budget Summary:</h2>
+          <div id="remaining-budget">Remaining Budget: ¥0</div>
+          <div id="expenses-list">
+            <h3>Expanse Log:</h3>
+            <ul id="expense-entries"></ul>
+            </div>
+        </section>
+
+      <!-- Currency Selection -->
+      <div class="section">
+        <h2>Currency Converter</h2>
+        <p>Convert from JPY to another currency:</p>
+        <input type="number" id="yen-amount" placeholder="Amount in Yen">
+        <select id="convert-to">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="SEK">SEK</option>
+          <option value="GBP">GBP</option>
+          <option value="AUD">AUD</option>
+        </select>
+        <button id="convert-btn">Convert</button>
+        <div id="conversion-result"></div>
+      </div>
+
+      <!-- Currency Rate -->
+<section>
+  <h2>Currency Conversion</h2>
+  <div>
+    <label for="converted-budget">Total Budget (Converted):</label>
+    <div id="converted-budget">0</div>
+  </div>
+</section>
+<button id="reset-btn">Reset All</button>
+<script src="script.js"></script>
+</body>
+</html>
+  
