@@ -18,6 +18,31 @@
     <button id="set-budget-btn">Set Budget</button>
   </section>
 
+   <!-- Currency Selection -->
+      <div class="section">
+        <h2>Currency Converter</h2>
+        <p>Convert from JPY to another currency:</p>
+        <input type="number" id="yen-amount" placeholder="Amount in Yen">
+        <select id="convert-to">
+          <option value="USD">USD</option>
+          <option value="EUR">EUR</option>
+          <option value="SEK">SEK</option>
+          <option value="GBP">GBP</option>
+          <option value="AUD">AUD</option>
+        </select>
+        <button id="convert-btn">Convert</button>
+        <div id="conversion-result"></div>
+      </div>
+
+      <!-- Currency Rate -->
+<section>
+  <h2>Currency Conversion</h2>
+  <div>
+    <label for="converted-budget">Total Budget (Converted):</label>
+    <div id="converted-budget">0</div>
+  </div>
+</section>
+
   <!-- Fixed costs (flight and accommodation) -->
   <section>
     <h2> Add Fixed Costs</h2>
@@ -63,30 +88,7 @@
             </div>
         </section>
 
-      <!-- Currency Selection -->
-      <div class="section">
-        <h2>Currency Converter</h2>
-        <p>Convert from JPY to another currency:</p>
-        <input type="number" id="yen-amount" placeholder="Amount in Yen">
-        <select id="convert-to">
-          <option value="USD">USD</option>
-          <option value="EUR">EUR</option>
-          <option value="SEK">SEK</option>
-          <option value="GBP">GBP</option>
-          <option value="AUD">AUD</option>
-        </select>
-        <button id="convert-btn">Convert</button>
-        <div id="conversion-result"></div>
-      </div>
-
-      <!-- Currency Rate -->
-<section>
-  <h2>Currency Conversion</h2>
-  <div>
-    <label for="converted-budget">Total Budget (Converted):</label>
-    <div id="converted-budget">0</div>
-  </div>
-</section>
+     
 <button id="reset-btn">Reset All</button>
 <script src="script.js"></script>
 </body>
