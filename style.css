@@ -1,11 +1,9 @@
-/* style.css */
-
 /* General reset and font */
 body {
   margin: 0;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   padding: 20px;
 }
 
@@ -13,8 +11,8 @@ body {
 #title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #ff2e2e;
-  border-bottom: 2px solid #ff2e2e;
+  color: #d40000;
+  border-bottom: 2px solid #d40000;
   padding-bottom: 10px;
   margin-bottom: 30px;
 }
@@ -22,8 +20,8 @@ body {
 /* Section headers */
 h2 {
   font-size: 1.5rem;
-  color: #ffffff;
-  border-left: 5px solid #ff2e2e;
+  color: #000000;
+  border-left: 5px solid #d40000;
   padding-left: 10px;
   margin-top: 40px;
 }
@@ -38,22 +36,22 @@ label {
 input, select {
   width: 100%;
   padding: 10px;
-  border: none;
+  border: 1px solid #ccc;
   margin-bottom: 15px;
   border-radius: 4px;
-  background-color: #1e1e1e;
-  color: #ffffff;
+  background-color: #f9f9f9;
+  color: #000000;
   font-size: 1rem;
 }
 
 input::placeholder {
-  color: #aaa;
+  color: #666;
 }
 
 /* Buttons */
 button {
-  background-color: #ff2e2e;
-  color: #fff;
+  background-color: #d40000;
+  color: #ffffff;
   border: none;
   padding: 12px 20px;
   font-size: 1rem;
@@ -65,21 +63,21 @@ button {
 }
 
 button:hover {
-  background-color: #cc0000;
+  background-color: #a50000;
 }
 
 /* Budget summary */
 #remaining-budget, #converted-budget {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #00ff99;
+  color: #008000;
   margin: 10px 0;
 }
 
 /* Expense list */
 #expenses-list {
-  background-color: #1a1a1a;
-  border-left: 4px solid #ff2e2e;
+  background-color: #f1f1f1;
+  border-left: 4px solid #d40000;
   padding: 15px;
   border-radius: 4px;
   margin-top: 10px;
@@ -87,7 +85,7 @@ button:hover {
 
 #expenses-list h3 {
   margin-top: 0;
-  color: #ffffff;
+  color: #000000;
 }
 
 #expense-entries {
@@ -99,7 +97,7 @@ button:hover {
 #conversion-result {
   margin-top: 10px;
   font-weight: bold;
-  color: #00d4ff;
+  color: #007acc;
 }
 
 /* Section container spacing */
